@@ -1,5 +1,6 @@
 
 from collections import defaultdict 
+from project_task import Task
 
 '''
 @Description:
@@ -15,26 +16,6 @@ from collections import defaultdict
                 !!! Decide how to run the Graph.__init__(...). It is possible to set the edges in a directed fashion on a non directed graph.
                 !!! Decide whether we want to have all vertices in the adjacency list.
 '''
-
-class Task(object):
-    '''
-    @Description:   Return the number of vertices in the graph.
-    @Author:        David Gillis
-    @Params:        None
-    @Created:       05.18.2018
-    @Throws:        None
-    @ToDo:          * Update attributes
-    '''
-    def __init__(self, name, description=None):
-        self.__name = name 
-        self.__description = description
-    
-    @property 
-    def name(self):
-        return self.__name
-
-    def __hash__(self):
-        return hash(self.__name)
 
 class Graph(object):
     def __init__(self, vertices=[], edges=None, directed=False):
