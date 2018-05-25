@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 class Graph(object):
     def __init__(self, vertices=[], edges=None, directed=False):
         '''
